@@ -7,3 +7,7 @@ Aby uruchomić projekt lokalnie i poprawnie załadować wszystkie zasoby, wykona
 3. Uruchom lokalny serwer HTTP. Jeśli masz zainstalowany język Python w wersji 3, wpisz polecenie:
    ```bash
    python -m http.server 8000
+
+## Źródła grafik
+Grafiki pobrane ze strony:
+- https://merch.riotgames.com/pl-pl/category/riftbound/?page=1&sort=dateDesc
