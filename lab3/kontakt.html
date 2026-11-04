@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kontakt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Sklep z TCG</h1>
+            <button id="theme-toggle" type="button" aria-pressed="false">Tryb ciemny</button>
+        </header>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="produkt.html">Produkt</a>
+            <a href="kontakt.html"  aria-current="page">Kontakt</a>
+        </nav>
+        <main class="catalog">
+            <form id="contact-form" method="get" action="kontakt.html">
+                <p><em>Podgląd lokalny. Formularz nie wysyła wiadomości.</em></p>
+
+                <label for="email">E-mail (wymagane): </label>
+                <input id="email" type="email" name="email" required>
+
+                <label for="produkt">Produkt (wymagane): </label>
+                <select id="produkt" name="produkt" required>
+                    <option value="">Wybierz produkt</option>
+                    <option value="booster_box">Booster Box Riftbound: Radiance</option>
+                    <option value="showdown_deck">Talia Zed vs Shen</option>
+                    <option value="talia_jinx">Talia Jinx</option>
+                </select>
+
+                <label for="ilosc">Liczba sztuk (wymagane, od 1 do 5): </label>
+                <input id="ilosc" type="number" name="ilosc" min="1" max="5" step="1" required>
+
+                <p id="value"></p>
+
+                <label for="wiadomosc">Wiadomość (wymagane, 10-500 znaków): </label>
+                <textarea id="wiadomosc" name="wiadomosc" minlength="10" maxlength="500" required></textarea>
+
+                <p id="msg-error" hidden>Wiadomość musi mieć minimum 10 znaków.</p>
+
+                <button type="submit">Sprawdź zapytanie</button>
+            </form>
+            <section id="summary" hidden>
+                <p>Produkt: <output id="sum-prod"></output></p>
+                <p>Ilość: <output id="sum-ilosc"></output></p>
+                <p>Wartość: <output id="sum-wart"></output></p>
+                <p>Wiadomość: <output id="sum-msg"></output></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Sklep z TCG.</p>
+        </footer>
+    </body>
+</html>
