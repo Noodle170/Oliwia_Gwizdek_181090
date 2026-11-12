@@ -1,4 +1,4 @@
-# Lab 3
+# Lab 4
 
 ## Instrukcja uruchomienia
 1. Projekt wymaga lokalnego serwera Apache (np. z pakietu XAMPP).
