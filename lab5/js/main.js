@@ -176,8 +176,8 @@ function initContactForm() {
             const totalGrosze = calculateTotal(product.cenaGrosze, qty);
 
             document.getElementById('sum-prod').textContent = product.nazwa;
-            document.getElementById('sum-qty').textContent = qty;
-            document.getElementById('sum-val').textContent = currencyFormatter.format(totalGrosze / 100);
+            document.getElementById('sum-ilosc').textContent = qty;
+            document.getElementById('sum-wart').textContent = currencyFormatter.format(totalGrosze / 100);
             document.getElementById('sum-msg').textContent = trimmedMsg;
 
             summarySection.hidden = false;
