@@ -77,9 +77,6 @@ if ($aktywny_klucz !== null) {
             <a href="lab4.php">Katalog PHP</a>
         </nav>
         <main class="catalog">
-            <?php if ($plik_widoku !== null): ?>
-                <?php include $plik_widoku; ?>
-            <?php else: ?>
              <?php if ($plik_widoku !== null): ?>
                 <?php include $plik_widoku; ?>
             <?php else: ?>
@@ -88,7 +85,6 @@ if ($aktywny_klucz !== null) {
                     <p><?php echo htmlspecialchars($blad_komunikat, ENT_QUOTES, 'UTF-8'); ?></p>
                     <p><a href="index.php?idp=glowna">Wróć na stronę główną</a></p>
                 </section>
-            <?php endif; ?>
             <?php endif; ?>
         </main>
         <footer>
