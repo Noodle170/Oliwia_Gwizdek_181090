@@ -75,6 +75,7 @@ START
     W PRZECIWNYM RAZIE:
       Wypisz komunikat błędu (404 lub 500)
 KONIEC
+```
 
 ## Testy działania i obsługa błędów (Lab 6)
 
