@@ -17,7 +17,7 @@
 2. **Utworzenie lokalnego użytkownika bazy danych:**
    * Na koncie administratora (`root`) wykonaj w zakładce SQL zapytanie nadające uprawnienia wyłącznie do odczytu z tabeli `page_list`:
      ```sql
-     CREATE USER 'uzytkownik'@'localhost' IDENTIFIED BY 'TwojeSilneHaslo';
+     CREATE USER 'uzytkownik'@'localhost' IDENTIFIED BY 'qwerty';
      GRANT SELECT ON `moja_strona`.`page_list` TO 'uzytkownik'@'localhost';
      FLUSH PRIVILEGES;
      ```
